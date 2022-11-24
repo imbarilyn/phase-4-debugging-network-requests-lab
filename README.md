@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: Toys instead of Toy. In active record the class name is always in singular.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How I debugged: The pdate action had no render for the json and so, the response in the fetch API for the PATCH there was no content since it was not a json formatted response.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How I debugged: There was no Route that matched thre request, and so adding the destroy controller action in the resources was the only way to solve the issue.
